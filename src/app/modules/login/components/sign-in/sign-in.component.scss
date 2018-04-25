@@ -1,0 +1,40 @@
+@import '../../../../../assets/sass/vars';
+
+.sign-in {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__container {
+        background-color: $container-bg;
+    
+        max-width: 300px;
+        min-height: 200px;
+    
+        padding: 25px 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        text-align: center;
+
+        @media (min-width: 600px) {
+            max-width: 500px;  
+        }
+
+        &__button {
+            .btn {
+                color: #fff;
+            }
+        }
+    }
+    &__logo {
+        max-width: 50px;
+        margin: 20px 0;
+    }
+}

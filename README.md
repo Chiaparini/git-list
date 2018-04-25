@@ -1,27 +1,23 @@
-# GitList
+## Installing dependecies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+First step to run this project locally is to install the dependecies, so run:
+`npm install`
 
-## Development server
+Important => This project was builded with Node on version 8.11.1 and npm 5.6.0! So if there's any conflict with node version,
+please bear in mind that you might need to use these specifieds versions in order to run it locally. Thanks! 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Development local server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm start` for a dev server. The app will automatically open the browser on the host: `http://localhost:4200`
+It does need a proxy config file that is on root folder, the proxy is to avoid CORS on GitHub API. The file is already there,
+so if you want to check how it is setup you can see the `proxy.conf.json` file.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Live version
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+There's a live version of this app that uses a NodeJs application as a proxy hosted on heroku.
+The link for the live version is: https://git-list.firebaseapp.com

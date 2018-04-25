@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@import 'base';
+@import 'vars';
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/card";
+@import "~font-awesome/scss/font-awesome.scss";
+
+body {
+    background-image: url('assets/images/background-codelines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% center;
+    background-color: $background-color;
+    background-attachment: fixed;
+}

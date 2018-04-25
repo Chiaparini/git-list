@@ -1,0 +1,8 @@
+<div class="repo" >
+  <a target="_blank" [href]="repo.html_url" class="repo__name btn">{{ repo.name }}</a>
+  <div>
+    <p class="repo__description">{{ repo.description }}</p>
+    <span class="repo__icons"><i class="fa fa-code-fork"></i>{{ repo.forks_count }}</span>
+    <span class="repo__icons"><i class="fa fa-star"></i>{{ repo.stargazers_count }}</span>
+  </div>
+</div>

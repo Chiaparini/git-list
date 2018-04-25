@@ -1,0 +1,30 @@
+.repo {
+    padding: 5px 10px;
+
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 3px 0px 0px 3px;
+    border-left: 3px solid #5bc0de;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+
+    &__name {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    &__description {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__icons {
+        margin-right: 5px;
+        i {
+            margin-right: 3px;
+        }
+    }
+}

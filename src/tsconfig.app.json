@@ -2,8 +2,13 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "module": "es2015",
+    "paths": {
+      "@auth/*": ["app/auth/*"],
+      "@images/*": ["assets/images/*"],
+      "@app/*": ["app/*"]
+    },
     "types": []
   },
   "exclude": [

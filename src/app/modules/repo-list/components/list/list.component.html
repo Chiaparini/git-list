@@ -1,0 +1,18 @@
+<div class="list">
+  <div class="list__user" *ngIf="user">
+    <div class="list__user__img">
+      <img [src]="user.avatar_url" alt="User Avatar">
+      <a (click)="endSession()" href="#" class="btn btn-danger">End session</a>      
+    </div>
+    <div class="list__user__description">
+      <p class="name"> {{ user.name }} <a [href]="user.url"></a></p>
+      <a href="mailto:{{ user.email }}" class="email">{{ user.email }}</a>
+      <p class="social">
+        <span>Followers: <span class="social__number">{{ user.followers }}</span> | Following: <span class="social__number">{{ user.following }}</span></span>
+      </p>
+    </div>
+  </div>
+  <div class="list__container">
+    <repo-item *ngFor="let repo of repos" [repo]="repo"></repo-item>
+  </div>
+</div>

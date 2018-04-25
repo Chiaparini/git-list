@@ -1,0 +1,13 @@
+{
+  "/proxy": {
+    "target": "https://github.com/login/oauth/",
+    "secure": false,
+    "pathRewrite": {
+      "^/proxy": ""
+    },
+    "changeOrigin": true,
+    "headers": {
+        "accept": "application/json"
+    }
+  }
+}
